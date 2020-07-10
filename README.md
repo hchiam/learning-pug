@@ -10,7 +10,7 @@ yarn global add pug-cli
 ```
 
 ```bash
-pug -w . -o ./html -P
+pug -w test.pug -o ./html -P
 # -w means watch
 # -o is for output
 # -P is for prettify
