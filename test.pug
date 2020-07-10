@@ -1,0 +1,38 @@
+doctype html
+html(lang='en')
+  head
+    title Hello, World!
+  body
+    h1 Hello, World!
+    div.remark
+      p Pug rocks!
+      p
+        a#some-link(href='/') some link text
+      p
+        | multi
+        | line
+        | text
+      p.
+        multi
+        line
+        text
+      // comment that will be shown in the output HTML (note the final space) 
+      //- comment that won't show in the output HTML
+      //
+        multi-line comment
+        that will be shown in the output HTML
+      - const greeting = 'Hi!'
+      p Greeting: #{greeting}
+
+      - const fruitList = ['apple', 'banana', 'coconut']
+      ul
+        //- for is an alias of each
+        for fruit, index in fruitList
+          li= `Fruit ${index+1}: ${fruit}`
+        else
+          li No fruit found.
+
+      if true
+        p true
+      else
+        p false
