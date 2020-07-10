@@ -20,4 +20,6 @@ pug -w . -o ./html -P
 
 ## More reading
 
+For combining with Express.js and data, see "A Hands-on Example" in <https://www.sitepoint.com/a-beginners-guide-to-pug>
+
 <https://pugjs.org/language/attributes.html>
