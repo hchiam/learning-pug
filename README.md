@@ -22,4 +22,8 @@ pug -w . -o ./html -P
 
 For combining with Express.js and data, see "A Hands-on Example" in <https://www.sitepoint.com/a-beginners-guide-to-pug>
 
-<https://pugjs.org/language/attributes.html>
+<https://pugjs.org/language/mixins.html>
+
+<https://pugjs.org/language/interpolation.html>
+
+<https://pugjs.org/language/inheritance.html>

@@ -18,7 +18,7 @@ body
       multi-line comment
       that will be shown in the output HTML
     - const greeting = 'Hi!'
-    p Greeting: #{greeting}
+    p Greeting: #{greeting.toUpperCase()}
 
     - const fruitList = ['apple', 'banana', 'coconut']
     ul
@@ -32,3 +32,22 @@ body
       p true
     else
       p false
+
+  //- declaration of a mixin:
+  mixin pet(name='some pet')
+    li.pet= name
+
+  //- usage of a mixin:
+  ul
+    +pet('bird')
+    +pet('cat')
+    +pet('dog')
+    +pet
+
+  //- another mixin, but with rest arguments (the "..." part):
+  mixin list(id, ...items)
+    ul(id=id)
+      for item in items
+        li= item
+
+  +list('my-list', 1, 2, 3, 4)
