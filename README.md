@@ -8,3 +8,7 @@ Tutorial: <https://www.sitepoint.com/a-beginners-guide-to-pug>
 yarn add pug
 yarn global add pug-cli
 ```
+
+## More reading
+
+<https://pugjs.org/language/attributes.html>
