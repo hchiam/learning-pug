@@ -1,4 +1,4 @@
-# Learning `pug`
+# Learning `pug` (used to be called jade)
 
 Just one of the things I'm learning. <https://github.com/hchiam/learning>
 
